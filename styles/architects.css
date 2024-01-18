@@ -10,12 +10,14 @@
 
 /* Primary Button */
 .primary-button {
-    
+
     width: 180px;
     height: 64px;
     border-radius: 8px;
     background: #FF900E;
     border: none;
+    cursor: pointer;
+    padding: 20px;
 }
 
 /* Header Section */
@@ -86,9 +88,26 @@ nav>ul>li>a {
     color: var(--Dark-03, #727272);
 }
 
-.explore-more-btn{
+.explore-more-btn {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #FFF;
 }
 
+/* Responsive Styles for Header */
+
+@media screen and (max-width:576px) {
+    header {
+        padding: 10px;
+        height: 810px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .banner-title{
+        font-size: 2.5rem;
+    }
+
+}
