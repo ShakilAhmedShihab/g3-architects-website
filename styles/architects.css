@@ -18,7 +18,7 @@
     border: none;
     cursor: pointer;
     padding: 20px;
-    
+
 }
 
 /* Header Section */
@@ -95,6 +95,148 @@ nav>ul>li>a {
     color: #FFF;
 }
 
+
+
+/* Main Stat */
+main {
+    max-width: 1440px;
+    /*most important ekta main or jekono section er jnno*/
+    margin: 80px auto;
+    /*center align korar jnno*/
+
+}
+
+/* feature */
+.feature {
+    display: flex;
+    align-items: center;
+
+}
+
+.team-picture {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    /*24px = 1.5rem*/
+}
+
+.team-content {
+    padding-left: 70px;
+    padding-bottom: 70px;
+}
+
+/* Team content design */
+.ql {
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: var(--Dark-03, #727272);
+}
+
+.of-our {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--Dark-01, #131313);
+}
+
+.text-feature {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #FF900E;
+}
+
+.feature-description {
+    color: var(--Dark-03, #727272);
+    font-weight: 400;
+}
+
+/* Feature2 */
+.feature2 {
+    max-width: 1440px;
+    margin-top: 130px;
+    display: flex;
+    column-gap: 140px;
+    margin-bottom: 130px;
+}
+
+/* Leftside */
+.box {
+    margin-bottom: 20px;
+    padding: 30px;
+
+    width: 586px;
+    height: 171px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+h5 {
+    color: var(--Dark-01, #131313);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/* Section3 */
+
+.facts {
+    color: var(--Dark-01, #131313);
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.box-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.notification-box {
+    padding: 35px;
+    width: 241.831px;
+    height: 185.831px;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+}
+
+/* Feature 3 */
+
+.feature3 {
+    margin-top: 130px;
+}
+
+.feature3header {
+    text-align: center;
+}
+
+.anchor {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* Footer section */
+footer {
+    width: 1440px;
+    height: 100px;
+    border-radius: 8px;
+    background: #FFF4E7;
+    margin: 130px auto;
+}
+.footer-description{
+    
+}
+.feature-description{
+    padding-top: 40px;
+    text-align: center;
+}
+
+
+
+
 /* Responsive Styles for Header */
 
 /* For mobile device */
@@ -108,7 +250,8 @@ nav>ul>li>a {
         flex-wrap: wrap;
         flex-direction: column;
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 2.5rem;
     }
 
@@ -116,55 +259,52 @@ nav>ul>li>a {
 
 /* For tablet */
 @media screen and (min-width:576px) and (max-width:960px) {
-    header{
+    header {
         padding: 10px;
         height: 924px;
     }
+
+}
+
+/* Responsive Styles for 1st Section */
+
+@media screen and (max-width:576px) {
+    .feature {
+        flex-direction: column-reverse;
+    }
+
+    .team-picture {
+        grid-template-columns: none;
+    }
+
+    .team-content {
+        padding-left: 10px;
+    }
+
+}
+
+/* Responsive for 3rd section */
+@media screen and (max-width:576px) {
+    .box-container {
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: center;
+    }
+
+    .anchor {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+
+}
+
+/* Responsive for footer */
+
+@media screen and (max-width:576px) {
+    footer{
+        width: auto;
+
+    }
     
 }
-
-/* Main Stat */
-main{
-    max-width: 1440px; /*most important ekta main or jekono section er jnno*/
-    margin: 80px auto; /*center align korar jnno*/
-
-}
-
-/* feature */
-.feature{
-    display: flex;
-    align-items: center;
-    
-}
-.team-picture{
-    display: grid;
-    grid-template-columns: repeat(2 , 1fr);
-    gap: 1.5rem; /*24px = 1.5rem*/
-}
-.team-content{
-    padding-left: 70px;
-}
-
-/* Team content design */
-.ql{
-    font-size: 2.8rem;
-    font-weight: 500;
-    color: var(--Dark-03, #727272);
-}
-.of-our{
-    font-size: 2.8rem;
-    font-weight: 700;
-    color: var(--Dark-01, #131313);
-}
-.text-feature{
-    font-size: 2.8rem;
-    font-weight: 700;
-    color: #FF900E;
-}
-
-.feature-description{
-    color: var(--Dark-03, #727272);
-    font-weight: 400;
-}
-
-
