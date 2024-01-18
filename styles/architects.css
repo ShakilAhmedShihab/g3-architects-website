@@ -1,0 +1,94 @@
+/* Work Sans font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Shared Styles */
+
+
+/* Primary Button */
+.primary-button {
+    
+    width: 180px;
+    height: 64px;
+    border-radius: 8px;
+    background: #FF900E;
+    border: none;
+}
+
+/* Header Section */
+
+
+header {
+
+    height: 1250px;
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+    /*upore niche 50px @ dane bame 240px*/
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ul {
+    display: flex;
+
+
+}
+
+nav>ul>li {
+    list-style: none;
+    margin-right: 30px;
+    font-size: 1rem;
+    font-weight: 500px;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    /* from figma */
+    color: var(--Dark-02, #424242);
+
+}
+
+.nav-title {
+    font-size: 2.8rem;
+    /*emni size 16px so 16*2.8 = 2.8rem*/
+    font-weight: 700;
+    color: var(--Dark-01, #131313);
+}
+
+/* Banner section */
+
+.banner-content {
+
+    /* border: 1px solid black; */
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--Dark-01, #131313);
+
+}
+
+.banner-description {
+    font-weight: 400;
+    /*400 normal font weight */
+    color: var(--Dark-03, #727272);
+}
+
+.explore-more-btn{
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFF;
+}
+
